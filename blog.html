@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usama Blogs</title>
+    <link class="mylogo" rel="icon" href="logo/main.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(40, 40, 40);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            nav {
+                flex-direction: column;
+                height: auto;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(40, 40, 40);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        nav ul li a:hover {
+            color: rgb(255, 81, 0);
+        }
+
+        .left {
+            font-size: 1.5rem;
+            color: rgb(255, 81, 0);
+        }
+
+        /* Blog container */
+        .blog-container {
+            max-width: 1400px;
+            margin: 130px auto;
+            padding: 0 20px;
+        }
+
+        /* Each blog post styling */
+        .blog-post {
+            background-color: rgb(255, 81, 0);
+            border-left: 4px solid white;
+            margin-bottom: 100px;
+            padding: 50px;
+        }
+
+        .blog-post .date {
+            color: white;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .blog-post h3 {
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .blog-post p {
+            line-height: 1.6;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .footer>div {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .footer ul li {
+                margin-bottom: 10px;
+            }
+
+            .image-footer {
+                width: 30px;
+                /* Adjust icon size for smaller screens */
+            }
+        }
+
+        .footer {
+            display: flex;
+            padding: 100px 100px;
+            justify-content: space-evenly;
+            background-color: rgb(255, 81, 0);
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 100px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 12px 0;
+            background-color: rgb(212, 70, 0);
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        footer ul li a:hover {
+            color: rgb(40, 40, 40);
+        }
+
+        .image-footer {
+            width: 40px;
+            position: relative;
+            top: 10px;
+            left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Usama Mahmood</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="blog-container">
+        <!-- Blog 1 -->
+        <article class="blog-post">
+            <p class="date">Published on: 02th September 2024</p>
+            <h3>How DevOps Transforms Cloud Architecture</h3>
+            <p>DevOps transforms cloud architecture by streamlining the development, deployment,
+                and management of cloud-based applications through automation, collaboration, and continuous
+                integration/continuous delivery (CI/CD) practices. It enables teams to quickly deploy and scale
+                applications
+                in dynamic cloud environments by automating infrastructure provisioning using tools like Terraform and
+                Kubernetes.
+                DevOps fosters a unified workflow between development and operations, improving communication and
+                reducing deployment time,
+                while leveraging cloud-native tools to ensure efficient resource management. This approach enhances
+                scalability, reliability,
+                and flexibility, allowing organizations to innovate rapidly and meet changing business demands in the
+                cloud.</p>
+        </article>
+
+        <!-- Blog 2 -->
+        <article class="blog-post">
+            <p class="date">Published on: 12th August 2024</p>
+            <h3>The Future of Cloud Computing</h3>
+            <p>The future of cloud computing is poised to be driven by advancements in artificial intelligence (AI),
+                edge computing, and quantum computing.
+                As businesses continue to migrate to the cloud, AI will enhance cloud services with automation and
+                intelligent data analysis, making
+                processes more efficient. Edge computing will reduce latency by processing data closer to its source,
+                empowering real-time applications in
+                sectors like IoT, healthcare, and autonomous vehicles. Quantum computing, though still in its infancy,
+                has the potential to revolutionize
+                cloud infrastructure by solving complex problems that traditional computing cannot. With greater
+                security measures like zero-trust
+                architecture, the cloud will evolve to offer even more scalable, agile, and secure solutions for
+                businesses worldwide.</p>
+        </article>
+
+        <!-- Add more blogs as needed -->
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <ul>
+                    <h2>Links</h2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <h2>Follow</h2>
+                    <li>
+                        <a href="https://x.com/UsamaSa70762719">
+                            <img class="image-footer" src="logo/x.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/usama-mahmood-4275v365k/">
+                            <img class="image-footer" src="logo/in.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/UsamaSatte">
+                            <img class="image-footer" src="logo/github.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <h2>Contact</h2>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100010036355885">
+                            <img class="image-footer" src="logo/fb.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/usamasatti_world/">
+                            <img class="image-footer" src="logo/insta.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:sammisatti1999@gmail.com">
+                            <img class="image-footer" src="logo/gmail.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <h2>Address</h2>
+                1129 Victoria Park Ave, Toronto ON M4A 2M5, Canada
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; usamamahmood.click | All Rights Reserved 2022-2024
+        </div>
+    </footer>
+</body>
+
+</html>

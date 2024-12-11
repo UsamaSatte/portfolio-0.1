@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usama Mahmood</title>
+    <link class="mylogo" rel="icon" href="logo/main.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(40, 40, 40);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            nav {
+                flex-direction: column;
+                height: auto;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(40, 40, 40);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        nav ul li a:hover {
+            color: rgb(255, 81, 0);
+        }
+
+        .left {
+            font-size: 1.5rem;
+            color: rgb(255, 81, 0);
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(255, 81, 0);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .firstSection {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .leftSection {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .rightSection {
+                width: 100%;
+            }
+
+            .rightSection img {
+                width: 80%;
+                /* Reduce the image size for mobile */
+                margin: 0 auto;
+            }
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .leftSection .intro {
+            font-size: 1rem;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: rgb(255, 81, 0);
+            color: white;
+            border: 2px;
+            border-radius: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftSection .buttons {
+            padding: 20px 0
+        }
+
+        .leftSection .btn:hover {
+            background-color: rgb(212, 70, 4);
+        }
+
+        @media screen and (max-width: 768px) {
+            .secondSection {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 130vh;
+        }
+
+        .rightSection img {
+            width: 100%;
+        }
+
+        .purple {
+            color: rgb(255, 81, 0);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(255, 81, 0);
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .timeline {
+                padding: 10px;
+            }
+
+            .timeline-content {
+                width: 100%;
+                left: 0 !important;
+                right: 0 !important;
+                margin-bottom: 20px;
+            }
+
+            .timeline::before {
+                left: 5%;
+            }
+
+            .timeline-item::before {
+                left: 5%;
+            }
+        }
+
+        /* Timeline container */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* Timeline item */
+        .timeline-item {
+            padding: 20px 0;
+            position: relative;
+        }
+
+        /* Vertical line */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: 1px;
+            background-color: white;
+            transform: translateX(-50%);
+        }
+
+        /* Timeline content box */
+        .timeline-content {
+            background-color: rgb(255, 81, 0);
+            padding: 20px;
+            border-radius: none;
+            position: relative;
+            width: 70%;
+            left: 55%;
+            /* Adjust this for positioning */
+        }
+
+        /* Timeline content on the left */
+        .timeline-item:nth-child(even) .timeline-content {
+            left: auto;
+            right: 30%;
+            /* Mirror to left side */
+        }
+
+        /* Circle on the timeline */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: rgb(255, 81, 0);
+            border-radius: none;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        /* Styling for heading and text */
+        .timeline-content h3 {
+            margin-top: 0;
+            color: white;
+        }
+
+        .timeline-content span {
+            display: block;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .timeline-content p {
+            margin: 0;
+            color: white;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .timeline-content {
+                width: 100%;
+                left: 0 !important;
+                right: 0 !important;
+            }
+
+            .timeline::before {
+                left: 10px;
+            }
+
+            .timeline-item::before {
+                left: 10px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .footer>div {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .footer ul li {
+                margin-bottom: 10px;
+            }
+
+            .image-footer {
+                width: 30px;
+                /* Adjust icon size for smaller screens */
+            }
+        }
+
+        .footer {
+            display: flex;
+            padding: 100px 100px;
+            justify-content: space-evenly;
+            background-color: rgb(255, 81, 0);
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 100px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 12px 0;
+            background-color: rgb(212, 70, 0);
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        footer ul li a:hover {
+            color: rgb(40, 40, 40);
+        }
+
+        .image-footer {
+            width: 40px;
+            position: relative;
+            top: 10px;
+            left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Usama Mahmood
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Usama Mahmood</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="resume.pdf" download="resume.pdf"><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/UsamaSatte">
+                        <button class="btn">GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="image/bg2.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>DevOps Engineer @ Cogeco Connexion</h3>
+                        <span>Oct 2023 - Present</span>
+                        <p>Developed and implemented cloud infrastructure, automated deployments using Docker,
+                            Kubernetes, Jenkins, and Terraform.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Web Developer Internee @ Trent University</h3>
+                        <span>Oct 2022 - Aug 2023</span>
+                        <p>Created static and responsive web solutions and projects using HTML, CSS, Bootstrap,
+                            Javascript.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Walmart</h3>
+                        <span>Oct 2021 - Sept 2022</span>
+                        <p>Engaged in various basic warehouse duties to contribute to overall operational efficiency.</p>
+                    </div>
+                </div>
+                <!-- Add more timeline items as needed -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <ul>
+                    <h2>Links</h2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <h2>Follow</h2>
+                    <li>
+                        <a href="https://x.com/UsamaSa70762719">
+                            <img class="image-footer" src="logo/x.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/usama-mahmood-4275v365k/">
+                            <img class="image-footer" src="logo/in.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/UsamaSatte">
+                            <img class="image-footer" src="logo/github.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <h2>Contact</h2>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100010036355885">
+                            <img class="image-footer" src="logo/fb.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/usamasatti_world/">
+                            <img class="image-footer" src="logo/insta.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:sammisatti1999@gmail.com">
+                            <img class="image-footer" src="logo/gmail.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <h2>Address</h2>
+                1129 Victoria Park Ave, Toronto ON M4A 2M5, Canada
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; usamamahmood.click | All Rights Reserved 2022-2024
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['DevOps Engineer', 'Quality Assurance', 'Problem Solver'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

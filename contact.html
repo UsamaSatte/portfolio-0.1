@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Usama</title>
+    <link class="mylogo" rel="icon" href="logo/main.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* General body styling */
+        body {
+            background-color: rgb(40, 40, 40);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navbar responsiveness */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            nav {
+                flex-direction: column;
+                height: auto;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(40, 40, 40);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        nav ul li a:hover {
+            color: rgb(255, 81, 0);
+        }
+
+        .left {
+            font-size: 1.5rem;
+            color: rgb(255, 81, 0);
+        }
+
+        /* First section (form section) layout */
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 130px;
+            align-items: center;
+            background-color: rgb(255, 81, 0);
+            height: auto;
+            /* Remove fixed height for better responsiveness */
+            padding: 50px 20px;
+        }
+
+        /* Form container */
+        .container {
+            background-color: rgb(40, 40, 40);
+            padding: 30px;
+            width: 100%;
+            max-width: 450px;
+            box-sizing: border-box;
+        }
+
+        /* Responsive form inputs */
+        input[type=text],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid white;
+            box-sizing: border-box;
+            background-color: rgb(40, 40, 40);
+            color: white;
+        }
+
+        /* Responsive form button */
+        input[type=submit] {
+            background-color: rgb(255, 81, 0);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            /* Full width button */
+        }
+
+        input[type=submit]:hover{
+            background-color: rgb(212, 70, 0);
+        }
+
+        /* Section responsiveness for smaller screens */
+        @media screen and (max-width: 768px) {
+            .firstSection {
+                flex-direction: column;
+                text-align: center;
+                margin: 20px;
+            }
+
+            .leftSection,
+            .rightSection {
+                width: 100%;
+                /* Full width for form and text */
+            }
+
+            .container {
+                padding: 20px;
+                /* Adjust padding for smaller screens */
+            }
+        }
+
+        /* Footer responsiveness */
+        @media screen and (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .footer>div {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .footer ul li {
+                margin-bottom: 10px;
+            }
+
+            .image-footer {
+                width: 30px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .footer>div {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .footer ul li {
+                margin-bottom: 10px;
+            }
+
+            .image-footer {
+                width: 30px;
+                /* Adjust icon size for smaller screens */
+            }
+        }
+
+        .footer {
+            display: flex;
+            padding: 100px 100px;
+            justify-content: space-evenly;
+            background-color: rgb(255, 81, 0);
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 100px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 12px 0;
+            background-color: rgb(212, 70, 0);
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        footer ul li a:hover {
+            color: rgb(40, 40, 40);
+        }
+
+        .image-footer {
+            width: 40px;
+            position: relative;
+            top: 10px;
+            left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Usama Mahmood</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div class="leftSection">
+                    <h1>Let's Chat!</h1>
+                    Feel free to send me a message
+                </div>
+            </div>
+            <div class="rightSection">
+                <div class="container">
+                    <form action="https://formspree.io/f/myzgawny" method="POST" action="action_page.php">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="emailaddress" placeholder="Your email address..">
+
+                        <label for="message">Message</label>
+                        <textarea type="text" id="message" name="message" placeholder="Write something.."
+                            style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <ul>
+                    <h2>Links</h2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <h2>Follow</h2>
+                    <li>
+                        <a href="https://x.com/UsamaSa70762719">
+                            <img class="image-footer" src="logo/x.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/usama-mahmood-4275v365k/">
+                            <img class="image-footer" src="logo/in.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/UsamaSatte">
+                            <img class="image-footer" src="logo/github.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <h2>Contact</h2>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100010036355885">
+                            <img class="image-footer" src="logo/fb.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/usamasatti_world/">
+                            <img class="image-footer" src="logo/insta.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:sammisatti1999@gmail.com">
+                            <img class="image-footer" src="logo/gmail.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <h2>Address</h2>
+                1129 Victoria Park Ave, Toronto ON M4A 2M5, Canada
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; usamamahmood.click | All Rights Reserved 2022-2024
+        </div>
+    </footer>
+</body>
+
+</html>
